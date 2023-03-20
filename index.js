@@ -32,6 +32,6 @@ app.get('/', (req, res) => {
   res.json({"saheli" : "saheli"})
 });
 
-app.listen(port, () => {
+app.listen(process.env.PORT || port, () => {
   console.log(`saheli API should be up and running on ${port}`)
 });
